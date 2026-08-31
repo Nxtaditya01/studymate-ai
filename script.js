@@ -41,3 +41,13 @@ if(notes){
 }
 
 }
+let notes = [];
+
+function openNotes(){
+  let note = prompt("Apna note likho:");
+
+  if(note){
+    notes.push(note);
+    alert("Note save ho gaya ✅");
+  }
+}
