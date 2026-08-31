@@ -1,3 +1,4 @@
+console.log("JS loaded");
 function askAI(){
 
     let question = document.querySelector("input").value;
