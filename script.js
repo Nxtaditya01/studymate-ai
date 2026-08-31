@@ -51,3 +51,12 @@ function openNotes(){
     alert("Note save ho gaya ✅");
   }
 }
+function openNotes(){
+  let notes = localStorage.getItem("notes");
+
+  if(notes){
+    alert("📚 Your Notes:\n\n" + notes);
+  }else{
+    alert("❌ Koi notes saved nahi hai");
+  }
+}
