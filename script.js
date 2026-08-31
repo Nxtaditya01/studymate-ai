@@ -21,10 +21,8 @@ else if(question.includes("hello") || question.includes("hi")){
     answerBox.innerHTML =
     "👋 Hello! Main StudyMate AI hu. Tum apna study doubt puch sakte ho.";
 }
-
 else{
-    answerBox.innerHTML =
-    "🤖 Main is topic ko samajhne ki koshish kar raha hu. Thoda aur detail me question pucho.";
+    answerBox.innerHTML = "🤖 Mujhe is question ka answer dhoondhna padega.";
 }
 
 }
