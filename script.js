@@ -27,11 +27,17 @@ else{
  
 function openNotes(){
 
-    let notes = prompt("Apne notes likho:");
+let oldNotes = localStorage.getItem("studyNotes");
 
-    if(notes){
-        localStorage.setItem("studyNotes", notes);
-        alert("✅ Notes saved!");
-    }
+let notes = prompt("Apne notes likho:", oldNotes || "");
+
+if(notes){
+    localStorage.setItem("studyNotes", notes);
+
+    alert("✅ Notes saved!");
+
+    document.querySelector(".ai").innerHTML = 
+    "📚 Your Notes:<br><br>" + notes;
+}
 
 }
