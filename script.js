@@ -24,20 +24,3 @@ else if(question.includes("hello") || question.includes("hi")){
 else{
     answerBox.innerHTML = "🤖 Mujhe is question ka answer dhoondhna padega.";
 }
- 
-function openNotes(){
-
-let oldNotes = localStorage.getItem("studyNotes");
-
-let notes = prompt("Apne notes likho:", oldNotes || "");
-
-if(notes){
-    localStorage.setItem("studyNotes", notes);
-
-    alert("✅ Notes saved!");
-
-    document.querySelector(".ai").innerHTML = 
-    "📚 Your Notes:<br><br>" + notes;
-}
-
-}
