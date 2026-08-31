@@ -26,13 +26,17 @@ else{
 }
 
 }
+
 function openNotes(){
 
 let notes = prompt("Apne notes likho:");
 
-if(notes){
+if(notes != null && notes != ""){
     localStorage.setItem("studyNotes", notes);
     alert("✅ Notes saved!");
+}
+else{
+    alert("Koi note nahi likha");
 }
 
 }
