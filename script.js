@@ -24,19 +24,14 @@ else if(question.includes("hello") || question.includes("hi")){
 else{
     answerBox.innerHTML = "🤖 Mujhe is question ka answer dhoondhna padega.";
 }
-
-}
-
+ 
 function openNotes(){
 
-let notes = prompt("Apne notes likho:");
+    let notes = prompt("Apne notes likho:");
 
-if(notes != null && notes != ""){
-    localStorage.setItem("studyNotes", notes);
-    alert("✅ Notes saved!");
-}
-else{
-    alert("Koi note nahi likha");
-}
+    if(notes){
+        localStorage.setItem("studyNotes", notes);
+        alert("✅ Notes saved!");
+    }
 
 }
