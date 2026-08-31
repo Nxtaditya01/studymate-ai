@@ -26,3 +26,13 @@ else{
 }
 
 }
+function openNotes(){
+
+let notes = prompt("Apne notes likho:");
+
+if(notes){
+    localStorage.setItem("studyNotes", notes);
+    alert("✅ Notes saved!");
+}
+
+}
