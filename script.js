@@ -1,0 +1,1 @@
+alert("StudyMate AI Ready!");
